@@ -107,8 +107,8 @@ Visualize the resulting embeddings and decision boundaries.
 | File Name | Description |
 | --- | --- |
 | **`mp3_delete.py`** | Utility script to bulk delete MP3 files based on a specific numerical range (e.g., to reduce dataset size). |
-| **`delete_01.py`** | Utility script to remove a specific file (`001001.mp3`) across all subdirectories. |
 | **`remove_silence.py`** | Preprocessing script using `pydub` to split audio on silence and merge non-silent chunks. |
+| **`delete_01.py`** | Utility script to remove a specific file (`001001.mp3`) across all subdirectories. |
 | **`dataset_visual.ipynb`** | Notebook for calculating and displaying dataset statistics (duration, file counts) before and after augmentation logic. |
 | **`contrastive_first.ipynb`** | **Main Training Notebook.** Handles data loading, Triplet Dataset creation, and Wav2Vec 2.0 fine-tuning. |
 | **`visualization.ipynb`** | **Demo/Inference Notebook.** Replicates the full evaluation pipeline and produces t-SNE visualizations. |
@@ -123,3 +123,4 @@ After running Step 7 (`visualization.ipynb`), you will generate a visualization 
 * **Output File:** `comparison_tsne_knn_mlp.png`
 
 * **Metrics:** Accuracy scores for k-NN and MLP classifiers are printed at the end of the notebook.
+
