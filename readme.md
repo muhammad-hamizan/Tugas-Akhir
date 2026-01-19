@@ -44,25 +44,23 @@ python mp3_delete.py
 
 ```
 
-* *Effect:* Deletes MP3 files with numerical names outside the range `1002` to `77050`.
-
-### 3. Remove Specific Artifacts
-
-Run the script to delete specific files (e.g., `001001.mp3`, often the Basmalah) that might cause class overlap.
-
-```bash
-python delete_01.py
-
-```
-
-* *Effect:* Removes `001001.mp3` from all reciter subdirectories.
-
-### 4. Audio Preprocessing (Silence Removal)
+### 3. Audio Preprocessing (Silence Removal)
 
 Process the raw audio to remove silence, normalizing the input for the model.
 
 ```bash
 python remove_silence.py
+
+```
+
+* *Effect:* Deletes MP3 files with numerical names outside the range `1002` to `77050`.
+
+### 4. Remove Specific Artifacts
+
+Run the script to delete specific files (e.g., `001001.mp3`, often the Basmalah) that might cause class overlap.
+
+```bash
+python delete_01.py
 
 ```
 
@@ -123,4 +121,5 @@ Visualize the resulting embeddings and decision boundaries.
 After running Step 7 (`visualization.ipynb`), you will generate a visualization similar to the one below, showing how well the model clusters different Surahs:
 
 * **Output File:** `comparison_tsne_knn_mlp.png`
+
 * **Metrics:** Accuracy scores for k-NN and MLP classifiers are printed at the end of the notebook.
